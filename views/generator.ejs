@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+<h1>Generator</h1>
+
+<form method="POST">
+    <label>
+        <input type="radio" name="category" value="names" <%= category === 'names' ? 'checked' : '' %>>
+        Names
+    </label>
+    <label>
+        <input type="radio" name="category" value="emails" <%= category === 'emails' ? 'checked' : '' %>>
+        Emails
+    </label>
+    <button type="submit">Generate</button>
+</form>
+
+<% if (results) { %>
+    <ul>
+        <% results.forEach(r => { %>
+            <li><%= r %></li>
+        <% }) %>
+    </ul>
+<% } %>
+
+<%- include('footer') %>

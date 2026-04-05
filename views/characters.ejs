@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+<h1>Characters</h1>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Search a character..." value="<%= query %>">
+    <button type="submit">Search</button>
+</form>
+
+<% if (characters && characters.length === 0) { %>
+    <p>No characters found.</p>
+<% } %>
+
+<% if (characters) { %>
+    <div class="grid">
+        <% characters.forEach(c => { %>
+            <div class="card">
+                <img src="<%= c.image %>" alt="<%= c.name %>">
+                <p><%= c.name %></p>
+            </div>
+        <% }) %>
+    </div>
+<% } %>
+
+<%- include('footer') %>

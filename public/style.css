@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: silver;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: black;
+    border-bottom: 2px solid rgb(49, 151, 76);
+    padding: 15px 30px;
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: silver;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(49, 151, 76);
+}
+
+h1 {
+    color: rgb(49, 151, 76);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+main, body > h1, body > p, body > form, body > div, body > ul {
+    width: 80%;
+    margin: 30px auto;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid rgb(49, 151, 76);
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(49, 151, 76);
+    font-size: 16px;
+    font-family: monospace;
+    width: 250px;
+}
+
+input[type="radio"] {
+    accent-color: rgb(49, 151, 76);
+    margin-right: 6px;
+}
+
+label {
+    color: silver;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 22px;
+    border: 2px solid rgb(49, 151, 76);
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(49, 151, 76);
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: rgb(49, 151, 76);
+    color: black;
+}
+
+form {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grid {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background-color: #111;
+    border: 2px solid rgb(49, 151, 76);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card p {
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+ul {
+    width: 80%;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+li {
+    color: rgb(49, 151, 76);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: black;
+    border-top: 2px solid rgb(49, 151, 76);
+    color: silver;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+a {
+    color: silver;
+}
+
+a:hover {
+    color: rgb(49, 151, 76);
+}
