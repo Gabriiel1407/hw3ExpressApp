@@ -1,5 +1,6 @@
-const express = require('express')
-const Chance = require('chance')
+import express from 'express'
+import Chance from 'chance'
+
 const app = express()
 const chance = new Chance()
 
@@ -45,4 +46,5 @@ app.get('/about', (req, res) => {
     res.render('about', { title: 'About' })
 })
 
-app.listen(3000)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, "0.0.0.0");
